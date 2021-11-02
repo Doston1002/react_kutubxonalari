@@ -1,0 +1,60 @@
+rasm qo'yish
+.................
+import image1 from 'rasm joylashgan fayl';
+
+    <img src={image1} />,
+..................
+.  js fayli       .
+..................
+import React from 'react';
+
+const Js fayl nomi = () =>{
+    
+    return (
+        <div>
+           
+        </div>
+    );
+};
+
+export default Js fayl nomi;
+.............................
+sass hatoligini to'g'irlash
+npm cache verify
+npm install node-sass@4.14.1
+..............................
+
+react-modal-video 
+......................
+npm i react-modal-video/package.json
+...............................
+import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
+import ModalVideo from 'react-modal-video';
+import '../sass/style.scss';
+const ReactModalVideo = () =>{
+    const [isOpen, setOpen] = useState(false);
+    return (
+        <div>
+            <React.Fragment>
+                <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="f2dbyCpy2SQ" onClose={() => setOpen(false)} />
+
+                <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
+		    </React.Fragment>
+        </div>
+    );
+};
+
+export default ReactModalVideo;
+......................................
+sass fayliga qo'yish 
+..................
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+
+................................................
+react carousel/package.json
+............................................
+npm i react-alice-carousel
+........................................
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
